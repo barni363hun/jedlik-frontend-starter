@@ -20,3 +20,5 @@ It is marked with comments like "//EXAMPLE ..."
 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 [Angular cheatsheet](https://angular.io/guide/cheatsheet)
+
+<small>If you have problems with dates: [date-fns](https://date-fns.org/docs/Getting-Started)</small>
