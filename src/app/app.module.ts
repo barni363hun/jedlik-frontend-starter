@@ -10,9 +10,10 @@ import { MyTestComponent } from './my-test/my-test.component';
 
 //EXAMPLE angular material button import
 import { MatButtonModule } from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, MyTestComponent],
+  declarations: [AppComponent, MyTestComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
