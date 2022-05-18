@@ -14,6 +14,7 @@
     "cbrevik.toggle-format-on-save",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "abusaidm.html-snippets",
-    "Zignd.html-css-class-completion"
+    "zignd.html-css-class-completion",
+    "johnpapa.Angular2"
   ]
 }
