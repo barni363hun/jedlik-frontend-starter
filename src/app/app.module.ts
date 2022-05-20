@@ -6,22 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { MyTestComponent } from './my-test/my-test.component';
+import { MatTableModule } from '@angular/material/table';
 
-//EXAMPLE angular material button import
-import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
+import { OffersComponent } from './offers/offers.component';
+import { AddNewComponent } from './add-new/add-new.component';
 
 @NgModule({
-  declarations: [AppComponent, MyTestComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, OffersComponent, AddNewComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    //EXAMPLE angular material button import
-    MatButtonModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

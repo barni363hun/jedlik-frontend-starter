@@ -1,0 +1,42 @@
+<div class="text-center">
+  <h1>Ajánlataink</h1>
+</div>
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+  <ng-container matColumnDef="Kategória">
+    <th mat-header-cell *matHeaderCellDef>Kategória</th>
+    <td mat-cell *matCellDef="let element">{{ element.cat }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Leírás">
+    <th mat-header-cell *matHeaderCellDef>Leírás</th>
+    <td mat-cell *matCellDef="let element">{{ element.desc }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Hirdetés Dátuma">
+    <th mat-header-cell *matHeaderCellDef>Hirdetés Dátuma</th>
+    <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Tehermentes">
+    <th mat-header-cell *matHeaderCellDef>Tehermentes</th>
+    <td mat-cell *matCellDef="let element">
+      <div *ngIf="element.teh">
+        <p class="text-success">Igen</p>
+      </div>
+      <div *ngIf="!element.teh">
+        <p class="text-danger">Nem</p>
+      </div>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Fénykép">
+    <th mat-header-cell *matHeaderCellDef>Fénykép</th>
+    <td mat-cell *matCellDef="let element">
+      <div class="centre">
+        <img class="asd" [src]="element.pic" />
+      </div></td
+  ></ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
